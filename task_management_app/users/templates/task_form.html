@@ -1,0 +1,13 @@
+<h1>{{ form.instance.id|default:"Create" }} Task</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'task-list' %}">Back</a>
+
+
+
+{% comment %} i have to continue work here {% endcomment %}
+
+
