@@ -4,6 +4,9 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Task
 from .forms import TaskForm
+from django.http import Http404
+from .models import UserInvitation
+
 
 
 def home(request):
@@ -48,5 +51,24 @@ def task_delete(request, pk):
         task.delete()
         return redirect('task-list')
     return render(request, 'task_confirm_delete.html', {'task': task})
+
+
+def register(request, token):
+    try:
+        invitation = UserInvitation.objects.get(token=token, is_used=False)
+    except UserInvitation.DoesNotExist:
+        raise Http404("Invalid or expired invitation.")
+
+    if request.method == 'POST':
+        invitation.is_used = True
+        invitation.save()
+
+        return redirect('login')
+
+    return render(request, 'register.html', {'invitation': invitation})
+
+def register_without_token(request):
+    return render(request, 'users/register.html')
+
 
 

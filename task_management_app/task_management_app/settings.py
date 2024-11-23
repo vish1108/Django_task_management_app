@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'Enter googe outh Secret key here'
+SECRET_KEY = 'Enter google outh Secret key here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -149,6 +149,13 @@ AUTHENTICATION_BACKEND = (
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+
+
+#Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'no-reply@yourdomain.com'
+SITE_URL = 'http://localhost:8000' 
 
 
 

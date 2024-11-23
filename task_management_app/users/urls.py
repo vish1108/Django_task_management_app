@@ -9,5 +9,6 @@ urlpatterns = [
     path('task_list/create/', views.task_create, name='task-create'),
     path("task_list/update/<int:pk>/",views.task_update, name="task-update"),
     path("task_list/delete/<int:pk>/", views.task_delete, name="task-delete"),
+    path('register/<uuid:token>/', views.register, name='register'),
 
 ]
