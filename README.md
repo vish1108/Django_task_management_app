@@ -11,15 +11,26 @@ This is a simple task management web application built using **Django**. The app
 1. **Google Authentication**:  
    - Users can log in securely with their Google account.  
    - Google OAuth integration ensures seamless and secure authentication.
+<br>
 
-2. **Task Management**:  
+
+   <img src="https://github.com/vish1108/Django_task_management_app/blob/master/task_management_app/static/auth_error.png" alt="Google Auth Error" width="500"/>   
+
+3. **Task Management**:  
    - **Create** tasks with a title and description.  
    - **View** a list of all tasks.  
    - **Edit** task details.  
-   - **Delete** tasks.  
+   - **Delete** tasks.
+   <br>
+  
+   <img src="https://raw.githubusercontent.com/vish1108/Django_task_management_app/master/task_management_app/static/google_login.png" alt="Google Login" width="500"/>
 
-3. **Bootstrap Styling**:  
+
+4. **Bootstrap Styling**:  
    - Basic UI enhancements using Bootstrap for a clean and responsive design.
+<br>
+
+  <img src="https://github.com/vish1108/Django_task_management_app/blob/master/task_management_app/static/bootstarp_on_website.png" alt="Bootstrap on Website" width="500"/>
 
 ---
 
