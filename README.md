@@ -36,3 +36,21 @@ This is a simple task management web application built using **Django**. The app
    ```bash
    git clone https://github.com/vish1108/Django_task_management_app.git
    cd task-management-app
+
+
+### Project Status
+
+1. **Implemented Features**:
+   - User task list with CRUD functionality.
+   - Token-based user invitation and partial registration flow.
+
+2. **Pending Work**:
+   - Completing the registration form logic after receiving a valid token.
+   - Handling invalid or expired tokens gracefully.
+
+3. **Challenges**:
+   - Encountered issues with integrating the token validation with the user registration form.
+
+4. **Next Steps**:
+   - Plan to refine the `register` view and connect it with the user model to complete the registration process.
+
